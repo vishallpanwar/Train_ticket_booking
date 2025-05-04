@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Dashboard</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
+    th { background-color: #f2f2f2; }
+  </style>
+</head>
+<body>
+  <h2>Admin Dashboard</h2>
+  <p>Total Fare Collected: ₹<span id="totalFare">0</span></p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Train No</th>
+        <th>Destination</th>
+        <th>Arrival Date</th>
+        <th>Arrival Time</th>
+        <th>Fare</th>
+      </tr>
+    </thead>
+    <tbody id="trainData">
+      <!-- JS will populate rows here -->
+    </tbody>
+  </table>
+
+  <script>
+    const trainDetails = [
+      { number: "12345", destination: "Delhi", date: "2025-05-10", time: "10:00 AM", fare: 850 },
+      { number: "67890", destination: "Mumbai", date: "2025-05-12", time: "02:30 PM", fare: 1250 },
+      { number: "54321", destination: "Chennai", date: "2025-05-15", time: "06:45 AM", fare: 990 }
+    ];
+
+    const tbody = document.getElementById("trainData");
+    let totalFare = 0;
+
+    trainDetails.forEach(train => {
+      const row = `<tr>
+        <td>${train.number}</td>
+        <td>${train.destination}</td>
+        <td>${train.date}</td>
+        <td>${train.time}</td>
+        <td>₹${train.fare}</td>
+      </tr>`;
+      tbody.innerHTML += row;
+      totalFare += train.fare;
+    });
+
+    document.getElementById("totalFare").innerText = totalFare;
+  </script>
+</body>
+</html>

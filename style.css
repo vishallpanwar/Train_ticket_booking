@@ -1,0 +1,297 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+  
+  h1, h2, h3 {
+    color: #333;
+  }
+  
+  input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  #ticketList {
+    margin-top: 20px;
+  }
+   
+
+
+
+
+ body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+  }
+  
+  .container {
+    text-align: center;
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 90%;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+  }
+  
+  .btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    transform: translateY(-2px);
+  }
+  
+  a[href="login.html"] {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  a[href="register.html"] {
+    background-color: #2ecc71;
+    color: white;
+  }
+  
+  a[href="login.html"]:hover {
+    background-color: #2980b9;
+  }
+  
+  a[href="register.html"]:hover {
+    background-color: #27ae60;
+  }
+
+
+.user-type {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1rem 0;
+  }
+  
+  .user-type label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  input[type="radio"] {
+    width: auto;
+    padding: 0;
+    margin: 0;
+    transform: scale(1.1);
+  }
+  
+  button[type="submit"] {
+    transition: all 0.3s ease;
+  }
+  
+  #loginForm input[value="admin"]:checked ~ button[type="submit"] {
+    background-color: #e74c3c;
+  }
+  
+  #loginForm input[value="admin"]:checked ~ button[type="submit"]:hover {
+    background-color: #c0392b;
+  }
+  
+  .admin-mode {
+    border-left: 4px solid #e74c3c;
+  }
+  
+  .admin-mode h2::after {
+    content: " (Admin)";
+    font-size: 0.8em;
+    color: #e74c3c;
+  } */
+
+
+
+/* .container {
+    max-width: 400px;
+    width: 90%;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  
+  input {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #3498db;
+  }
+  
+  button {
+    background-color: #3498db;
+    color: white;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+  }
+  
+
+  @media (max-width: 480px) {
+    .container {
+      padding: 1.5rem;
+    }
+    
+    input, button {
+      padding: 0.7rem;
+    }
+  } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+  }
+  
+  .user-type {
+    margin: 10px 0;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  } */

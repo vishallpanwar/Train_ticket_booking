@@ -1,0 +1,97 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <input type="text" id="loginUsername" placeholder="Username" required />
+      <input type="password" id="loginPassword" placeholder="Password" required />
+      
+      <div class="user-type">
+        <label>
+          <input type="radio" name="userType" value="user" checked> Regular User
+        </label>
+        <label>
+          <input type="radio" name="userType" value="admin"> Admin
+        </label>
+      </div>
+      
+      <button type="submit">Login</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .container { max-width: 400px; margin: auto; }
+    input[type="text"], input[type="password"] {
+      width: 100%; padding: 10px; margin: 8px 0;
+    }
+    .user-type {
+      margin: 10px 0;
+    }
+    button {
+      width: 100%; padding: 10px; background-color: #4CAF50;
+      color: white; border: none; cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <input type="text" id="loginUsername" placeholder="Username" required />
+      <input type="password" id="loginPassword" placeholder="Password" required />
+      
+      <div class="user-type">
+        <label>
+          <input type="radio" name="userType" value="user" checked> Regular User
+        </label>
+        <label>
+          <input type="radio" name="userType" value="admin"> Admin
+        </label>
+      </div>
+      
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const username = document.getElementById("loginUsername").value;
+      const password = document.getElementById("loginPassword").value;
+      const userType = document.querySelector('input[name="userType"]:checked').value;
+
+      if (userType === "admin") {
+        if (username === "admin" && password === "Admin@123") {
+          window.location.href = "admin_dashboard.html";  // Redirect to Admin Dashboard if credentials are correct
+        } else {
+          alert("Invalid admin credentials!");
+        }
+      } else {
+        // For regular users, add your logic here (if needed)
+        // For now, you can redirect to the booking page directly
+        window.location.href = "book.html";
+      }
+    });
+  </script>
+</body>
+</html>

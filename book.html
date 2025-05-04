@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book a Ticket</title>
+  <link rel="stylesheet" href="book.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Book a Ticket</h2>
+
+    <select id="boarding">
+      <option value="">Select Boarding Station</option>
+      <option value="Station1">Station1</option>
+      <option value="Station2">Station2</option>
+      <option value="Station3">Station3</option>
+    </select>
+
+    <select id="destination">
+      <option value="">Select Destination Station</option>
+      <option value="Station1">Station1</option>
+      <option value="Station2">Station2</option>
+      <option value="Station3">Station3</option>
+    </select>
+
+    <input type="date" id="travelDate" />
+
+    <button onclick="bookTicket()">Confirm Booking</button>
+
+    <p id="message"></p>
+
+    <a href="view.html"><button>View Tickets</button></a>
+  </div>
+
+  <script src="book.js"></script>
+</body>
+</html> 
